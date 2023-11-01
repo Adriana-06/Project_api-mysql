@@ -34,6 +34,10 @@ p, b{
 .content_one_picture {
   display: flex;
   justify-content: center;
+  border-color: #050505;
+  height: 150px;
+  padding-top: 3%;
+  
 }
 
 
