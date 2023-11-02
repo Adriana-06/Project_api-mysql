@@ -17,8 +17,8 @@ p, b{
 }
 
 .content_one {
+  justify-content: center;
   background-color: white;
-  display: flex;
   padding: 20px 100px;
   gap: 10%;
 }
@@ -31,22 +31,27 @@ p, b{
   justify-content: center;
 }
 
-.content_one_picture {
+.buttons_create{
+  display: flex;
+  flex-wrap: wrap;
   display: flex;
   justify-content: center;
-  border-color: #050505;
-  height: 150px;
-  padding-top: 3%;
-  
+  align-items: center;
 }
 
-
-.picture_one {
-  width: 450px;
-  border-radius: 5px;
+#create_desc{
+width: 200%;
+padding: 50px;
+border: 15%;
 }
 
+#create{
 
+border: 10%;
+border-radius: 10px;
+padding: 1%;
+margin-top: 3%;
+}
 
 .content-two {
   padding: 20px;
