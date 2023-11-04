@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../CSS/main_styles.css">
-  <link rel="stylesheet" href="../CSS/header_styles.css">
+  <link rel="stylesheet" href="../views/CSS/header_admin.css">
   <link rel="stylesheet" href="../CSS/footer_styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap"
     rel="stylesheet">
@@ -17,56 +17,17 @@
 <body>
 
   <header class="header">
+    <nav class="header">
 
-    <div id="emailModal" class="modal">
-      <div class="modal-content">
-        <span class="close" id="closeEmailModal">&times;</span>
-        <h2 id="contact_title"></h2>
-        <form id="emailForm">
-          <label id="for_label" for="to"></label>
-          <input type="email" id="to" name="to" required><br>
+      <h2 id="company_name" style="font-size: 45px;">LOVE</h2>
 
-          <label id="issue_label" for="subject"></label>
-          <input type="text" id="subject" name="subject" required><br>
-
-          <label id="message_label" for="message"></label>
-          <textarea id="message" name="message" required></textarea><br>
-          <div class="btn_container">
-
-            <button id="btn_send" type="submit"></button>
-          </div>
-
-        </form>
+      <div class="menu_option">
+        <h3>Create</h3>
+        <h3>Update</h3>
+        <h3>Delete</h3>
+        <img id="user" src="Assets/user_two.svg" alt="">
+        <h3 style="color: blue;" underline>carlos.arce@love.com</h3>
       </div>
-    </div>
-
-
-    <nav class="navigation-menu">
-
-      <div class="header-title">
-        <h1 id="company_name" style="font-size: 45px;"></h1>
-      </div>
-
-      <div class="nav-options">
-        
-        <ul class="first-menu-options">
-          <a href="../index.html">Base page</a>
-          <li><a id="menu_option_1" href="#start"></a></li>
-          <li><a id="menu_option_2" href="#products"></a></li>
-          <li><a id="menu_option_3" href="#services"></a></li>
-          <li><a id="menu_option_4" href="#"></a></li>
-          </li>
-        </ul>
-
-        <ul class="second-menu-options">
-          <li><img id="icon_header_1" src="../Assets/user.svg" alt=""></li>
-          <li><img id="icon_header_2" src="../Assets/building-store.svg" alt=""></li>
-          <li><img id="icon_header_3" src="../Assets/search.svg" alt=""></li>
-
-        </ul>
-
-      </div>
-
     </nav>
 
   </header>
@@ -75,19 +36,13 @@
 
     <section class="content_one" id="start">
 
-      <div class="content_one_information">
-
-        <h2 id="title_secction_1"></h2>
-        <p style="line-height: 1.5;" id="paragraph_section_1"></p>
-
-      </div>
-
-      <div class="content_one_picture">
-
-        <img id="img_section_1" class="picture_one" src="" alt="">
-      </div>
-
-
+      <form>
+        <nav class="cont_one">
+           <h1 style="font-size: 25px;">Edit description</h1>
+           <input type="text" id="create_desc" name="create_desc">
+           <button id="create"><h3>Create</h3></button>
+        </nav>
+        </form>
 
     </section>
 
