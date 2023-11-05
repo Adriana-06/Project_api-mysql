@@ -1,0 +1,46 @@
+body{
+background-color: ffff;
+display: flex;
+flex-direction: column;
+}
+                   
+.header{
+display: flex;
+flex-direction: row;
+}
+
+.menu_option{
+  display: flex;
+  flex-direction: row;
+  margin-top:5% ;
+  padding-left: 180%;
+}
+                   
+h3{
+padding: 5%;
+}
+#user{
+height: 35%;
+padding-top: 7%;
+}
+                  
+.cont_one{
+background-color: rgba(212, 212, 212, 0.849);
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+}
+#create_desc{
+  margin-top: 2%;
+  height: 6%;
+  width: 50%;
+  padding: 5%;
+  border-radius: 5px;
+}
+                   
+#create{
+border-radius: 10px;
+width: 8%;
+margin: 1%;
+}
