@@ -35,7 +35,7 @@ import { MenuOptionsModule } from './menu-options/menu-options.module';
       host: "localhost",
       port: 3306,
       username: "root",
-      password: "1234",
+      password: "", /*ingrese su contra*/ 
       database: "db_landingpage",
 
       autoLoadEntities: true,

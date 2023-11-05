@@ -1,24 +1,24 @@
-* {
+/*Estilos que se aplicaran en toda la pagina.*/
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-/* Estilos para el fondo oscuro detrás de la ventana emergente */
+/*Estilos para el fondo oscuro detrás de la ventana emergente.*/
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  top: 0; 
+  left: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
+  z-index: 1; 
   overflow: auto;
 }
 
-/* Estilos para el contenido de la ventana emergente */
+/*Estilos para el contenido de la ventana emergente.*/
 .modal-content {
   background-color: #fff;
   max-width: 400px;
@@ -29,41 +29,29 @@
   position: relative;
 }
 
-/* Estilos para el botón de cierre (la "x") */
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
-  cursor: pointer;
-}
 
-/* Estilos para el formulario */
+/*Estilos para el formulario.*/
 #emailForm {
   text-align: left;
 }
 
+/*Estilos para el formulario.*/
+.modal-content{
+  background:linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(197, 197,197)100%);
+}
+
+/*Estilos para el formulario.*/
+.modal-content h2{
+  text-align:  center;
+}
+/*.Estilos para el formulario.*/
 #emailForm label {
   display: block;
   margin-bottom: 10px;
   font-weight: bold;
 }
 
-.modal-content{
-  background:linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(197, 197,197)100%);
-}
-
-.modal-content h2{
-  text-align:  center;
-}
-
-.btn_container{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
-
+/*Estilos para los elementos que estan dentro del formulario (email-texto-campo de texto).*/
 #emailForm input[type="email"],
 #emailForm input[type="text"],
 #emailForm textarea {
@@ -75,6 +63,14 @@
   font-size: 16px;
 }
 
+/*Boton del formulario(Send).*/
+.btn_container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/*Estilos para el boton del formulario.*/
 #emailForm button[type="submit"] {
   background-color: #007bff;
   color: #fff;
@@ -82,42 +78,45 @@
   border: none;
   border-radius: 4px;
   font-size: 16px;
-  cursor: pointer;
+  cursor: pointer; /*Hace le poton interactivo.*/
 }
 
+/*Estilos para el boton del formulario cuando está el puulsor sobre el.*/
 #emailForm button[type="submit"]:hover {
   background-color: #0056b3;
 }
 
-
-
-
-/* Añade estilos adicionales según tus preferencias */
-
-.navigation-menu {
-  font-size: larger;
-  padding-left: 10px;
-  padding-right: 20px;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  /* Hace que el encabezado sea fijo en la parte superior */
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  padding: 10px 10PX;
-  z-index: 100;
-  /* Asegura que el encabezado esté en la parte superior de otros elementos */
+/*Estilos para el botón de cierre (la "x").*/ 
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
 }
 
-
-
+/*Añade estilos adicionales según tus preferencias.*/
+.navigation-menu {
+  display: flex;
+  justify-content: space-between;
+  font-size: large;
+  padding-left: 10px;
+  padding-right: 20px;
+  position: fixed; /*Hace que el encabezado este fiko en la parte superior.*/
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: white;
+  padding: 10px 10px;
+  z-index: 100; /*Asegura que el encabezado esté en la parte superior de otros elementos.*/
+}
+/*Alinea el menú principal de navegación.*/
 .nav-options {
   display: flex;
   gap: 30px;
 }
 
+/*Estilos para el menú de navegación.*/
 .first-menu-options {
   list-style-type: none;
   display: flex;
@@ -129,22 +128,25 @@
   color: #050505;
   transition: color 0.2s;
 }
+/*Fin estilos para el menú de navegación.*/
 
+/*Eso hace que cuando el pulsor pasa sobre la opción cambie de color.*/
 .first-menu-options a:hover {
   color: #0056b3;
 }
 
+/*Estilos para los iconos.*/
 .second-menu-options {
   list-style-type: none;
   display: flex;
   gap: 5px;
 }
 
+/*Para cambiar de posición de los iconos en base al tamaño de la pantalla.*/
 @media (max-width: 500px)
 {
   .navigation-menu{
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
-
 }
