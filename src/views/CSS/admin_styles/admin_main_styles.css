@@ -1,3 +1,4 @@
+/*Aplica estilos a toda la pagina.*/
 body {
   display: flex;
   flex-direction: column;
@@ -5,15 +6,16 @@ body {
 
 h1,
 h2,
-h3 {
+h3 { /*Tipografia para los titulos h3.*/
   font-family: 'Nunito Sans', sans-serif;
 }
 
 p,
-b {
+b { /*Tipografia para los los textos P.*/
   font-family: 'Zilla Slab', serif;
 }
 
+/*estilos generales para la descripción, colección, productos y servicios de pagina. */
 .main {
   margin-top: 60px;
   padding-left: 0px;
@@ -21,6 +23,9 @@ b {
   flex: 1;
 }
 
+/*Sección 1 (Descripción de la empresa)*/
+
+/*Estilos para toda la sección de la descripción*/
 .content_one {
   background-color: white;
   display: flex;
@@ -28,35 +33,8 @@ b {
   gap: 10%;
 }
 
-.edit_delete_container button {
-  height: 36px;
-  border-radius: 3px;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.edit_delete_container{
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.category_delete i{
-  color: red; /* Color del icono */
-}
-
-.category_edit i{
-  color: blue;
-}
-
-i{
-  font-size: 21px; /* Tamaño del icono */
-}
-
-
-
-.content_one_information {
+/*Estilos de la descripción*/
+.content_one_information{
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -64,19 +42,22 @@ i{
   justify-content: center;
 }
 
-.content_one_picture {
+/*Estilos generales para la foto de la descripción*/
+.content_one_picture{
   display: flex;
   justify-content: center;
 }
 
-
-.picture_one {
-  width: 450px;
-  border-radius: 5px;
+/*Estilos especuficos para la foto de la descripción*/
+.picture_one{
+width: 450px;
+border-radius: 5px;
 }
+/*Fin sección 1*/
 
+/*Sección 2 (Nueva colección)*/
 
-
+/*Estilos para toda la sección de la colección.*/
 .content-two {
   padding: 20px;
   background-color: #e4e3d2;
@@ -85,13 +66,14 @@ i{
   justify-content: center;
 }
 
+/*Estilos generales para la infomacón de esta sección*/
 .content_two_information {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-
+/*Estilos del carrucel*/
 #carousel {
   display: flex;
   align-items: center;
@@ -99,13 +81,14 @@ i{
 
 }
 
+/*Boton y animación para el boton*/
 #leftButton,
 #picture-content_two {
   display: none;
   animation: fade 0.3s ease-in-out;
 }
 
-
+/*Estolos para los porductos de la nueva colección*/
 #content-product {
   background-color: white;
   border-radius: 10px;
@@ -119,6 +102,7 @@ i{
   gap: 15px;
 }
 
+/*Estilos para la sección del descuento */
 #content-discount {
   margin-top: 15px;
   border-radius: 50%;
@@ -129,18 +113,16 @@ i{
   align-items: center;
   display: flex;
   justify-content: center;
-
-
 }
 
+/*Estilos para las fotos de esta sección*/
 #picture-content_two {
-
-  transition: opacity 0.5s;
-
+  transition: opacity 0.5s; /*Efecto de transición*/
   width: 400px;
   height: 400px;
 }
 
+/*Estilos para la información de las imagenes de la colección*/
 #content-information-picture-one {
   width: 400px;
   display: flex;
@@ -149,10 +131,12 @@ i{
   margin-bottom: 15px;
 }
 
+/*Alinea el texto de la imagen*/
 #text-1 {
   text-align: left;
 }
 
+/*Estilos para el + de esta sección */
 #content-more {
   background-color: #050505;
   height: 50px;
@@ -164,6 +148,7 @@ i{
   align-items: center;
 }
 
+/*Estilos de forma para los botones de esta sección*/
 #buttons {
   display: flex;
   flex-direction: row;
@@ -172,6 +157,7 @@ i{
   margin-bottom: 20px;
 }
 
+/*Estilos para los botones de esta sección*/
 .clothes-buttons button {
   border-radius: 50%;
   background-color: white;
@@ -182,43 +168,59 @@ i{
 
 }
 
+/*cambia de color al poner el pulsor*/
 .clothes-buttons button:hover {
   background-color: #050505;
 }
 
+/*Fin sección 2*/
+
+/*Sección 3(Colección)*/
+/*Estilos generales para toda la sección*/
 .content-three {
   padding-top: 50px;
 }
 
+/*Estilo para el tutulo*/
+#title_content_three {
+  text-align: center;
+}
+
+/*Estilos especificos para las imagenes agrupadas */
 .container {
   display: flex;
   margin: auto;
   padding: 20px;
   width: 60%;
   height: 600px;
-
 }
 
+/*Opacidad*/
+.categories{
+  transition: opacity 0.5s ease;
+}
 
+/*Estilos para las imagenes*/
 .container img {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 0px;
   flex-grow: 1;
-  object-fit: cover;
-  /*se ajusta al tamaño del contenedor*/
-  opacity: .8;
-  transition: .7s ease;
+  object-fit: cover; /*se ajusta al tamaño del contenedor*/
+  opacity: .8; /*Opacidad*/
+  transition: .7s ease; /*Transición*/
   margin-right: 25px;
 }
 
+/*Hace que más clara la imagen al poner el pulsor sobre ella*/
 .container img:hover {
   cursor: crosshair;
   opacity: 1;
 
 }
 
+/*Estilos para el descuento*/
 .discount_field {
   width: 100%;
   display: flex;
@@ -227,35 +229,56 @@ i{
 
 }
 
-
-
-#title_content_three {
-  text-align: center;
+/*Estilos de los botones de etitar y eliminar*/
+.edit_delete_container button {
+  height: 36px;
+  border-radius: 3px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
 }
 
+/*Le da posición de los botones de etitar y eliminar*/
+.edit_delete_container{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
 
+/*color del icono de eliminar*/
+.category_delete i{
+  color: red;
+}
 
+/*color del icono de editar*/
+.category_edit i{
+  color: blue;
+}
 
+/*Tamaño del icono*/
+i{
+  font-size: 21px;
+}
+
+/*Fin sección 3*/
+
+/*Sección 4 (Servicios)*/
+/*Estilos generales para toda la sección*/
 .content-four {
   background-color: #FCE1D3;
   display: flex;
   flex-direction: row;
   text-align: start;
-
 }
 
-.content_four_picture {
-  margin-left: 20px;
+/*Estilos generales para los servicios*/
+.service {
+  display: flex;
+  gap: 40px;
 }
 
-#picture_content_four {
-  width: 350px;
-  border-radius: 20px;
-  padding: 10px;
-  margin-left: 150px;
-}
-
-#services_container {
+ /*Estilos para los servicios*/
+ #services_container {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -263,21 +286,23 @@ i{
   margin-left: 100px;
 }
 
-
-.categories{
-  transition: opacity 0.5s ease;
+/*Estilos generales para la imagen*/
+.content_four_picture {
+  margin-left: 20px;
 }
 
+/*Estilos especificos para la imagen*/
+#picture_content_four {
+  width: 350px;
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 150px;
+}
 
+/*Estilos para los icinos*/
 .service_icons {
   width: 70px;
   height: 70px;
   border-radius: 50px;
 }
-
-
-.service {
-
-  display: flex;
-  gap: 40px;
-}
+/*Fin sección 4*/
